@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="quilmesApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Subi tu foto!</title>
+
+    <!-- Bootstrap -->
+    <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <style>
+      body{
+          background: url('./img/background.png') no-repeat center center fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: 100% auto;
+          margin-top: 12%;
+      }
+
+      #bg{
+          background:url('./img/backgroundg.png') no-repeat center center;
+          height: 500px;
+      }
+      label {
+        font-family: 'Roboto Slab', serif;
+        font-size: 20px;
+        color: white
+
+      }
+    </style>
+
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./bower_components/ngUpload/ng-upload.js"></script>
+
+    <!-- This is the backend code. -->
+    <script src="./js/app.js"></script>
+
+</head>
+
+<body>
+
+  <div id="main_page" class="container">
+
+    <div class="header clearfix" >
+      <img src="./img/completa-tus-datos.png" ></img>
+    </div>
+
+    <div id="ingresoCodigo"  ng-controller="DatosPersonalesController as datosCtrl">
+
+      <form id="datosForm" ng-model="datosPersonalesForm">
+
+        <label for="txtNombre">Nombre: </label>
+        <input id="txtNombre" type="text" class="form-control" ng-model="datosPersonalesForm.nombre"></input> <br/>
+        <label for="txtApellido" >Apellido: </label>
+        <input id="txtApellido" type="text" class="form-control" ng-model="datosPersonalesForm.apellido"></input> <br/>
+        <label for="txtMail" >E-Mail: </label>
+        <input id="txtMail" type="text" class="form-control" ng-model="datosPersonalesForm.email"></input> <br/>
+        <label for="txtDireccion" >Direccion: </label>
+        <input id="txtDireccion" type="text" class="form-control" ng-model="datosPersonalesForm.direccion"></input> <br/>
+        <label for="txtCodigoPostal" >Codigo Postal: </label>
+        <input id="txtCodigoPostal" type="text" class="form-control" ng-model="datosPersonalesForm.codigoPostal"></input> <br/>
+        <label for="txtProvincia" >Provincia: </label>
+        <input id="txtProvincia" type="text" class="form-control" ng-model="datosPersonalesForm.provincia"></input> <br/>
+        <label for="txtCiudad" >Ciudad: </label>
+        <input id="txtCiudad" type="text" class="form-control" ng-model="datosPersonalesForm.ciudad"></input> <br/>
+
+        <label for="txtNroTarjeta" >Nro Tarjeta: </label>
+        <input id="txtNroTarjeta" type="text" class="form-control" ng-model="datosPersonalesForm.tarjeta"></input> <br/>
+        <label for="txtCodigoVerificacion" >Codigo Verficacion: </label>
+        <input id="txtCodigoVerificacion" type="text" class="form-control" ng-model="datosPersonalesForm.codigoTarjeta"></input> <br/>
+        <label for="txtCodigoVerificacion" >Vencimiento: </label>
+        <input id="txtMesVencimiento" type="text" size="4"></input>
+        <input id="txtAnoVencimiento" type="text" size="8"></input><br/>
+
+      </form>
+      <br/><br/><br/><br/>
+      <div>
+        <a href="./elegirVaso.html"><img src="./img/volver.png"></img><a>
+        <a href="./gracias.html"><img src="./img/next.png"></img><a>
+      </div>
+    </div>
+
+
+  </div>
+
+</body>
+</html>
