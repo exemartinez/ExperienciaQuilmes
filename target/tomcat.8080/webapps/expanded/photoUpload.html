@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="quilmesApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Subi tu foto!</title>
+
+    <!-- Bootstrap -->
+    <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body{
+          background: url('./img/background.png') no-repeat center center fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: 100% auto;
+          //margin-top: 12%;
+      }
+
+      #bg{
+          background:url('./img/backgroundg.png') no-repeat center center;
+          height: 500px;
+      }
+
+      .image-upload > input
+      {
+        display: none;
+      }
+
+    </style>
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./bower_components/ngUpload/ng-upload.js"></script>
+
+    <!-- This is the backend code. -->
+    <!--script src="./js/app.js"></script-->
+
+</head>
+
+<body>
+
+  <div id="main_page" class="container" align="center" valign="center">
+
+    <div class="header clearfix">
+      <img src="./img/tomaFoto.png"></img>
+    </div>
+
+    <div id="ingresoCodigo">
+
+      <form id="fileForm" enctype="multipart/form-data">
+
+        <div class="image-upload">
+            <label for="file-input">
+                <img src="./img/subiFoto.png">
+            </label>
+
+            <input id="file-input" type="file" />
+        </div>
+
+        <div id="uploadPhoto" >
+          <a href="./frase.html"><img src="./img/next.png"></img><a>
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
