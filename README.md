@@ -1,8 +1,8 @@
 # ExperienciaQuilmes
 This is the HTML/CSS/AngularJS prototype that we constructed for the first Eklos Hackathon in Buenos Aires, this is in spanish and is an idea than went into the top 5 ideas for the Quilmes Challenge.
 
-#{SPANISH}
-#Experiencia Quilmes - Idea: "El sabor del RE encuentro"
+# {SPANISH}
+# Experiencia Quilmes - Idea: "El sabor del RE encuentro"
 
 El desafio era proporcionar una experiencia superadora de tomar cerveza en casa; Quilmes, como marca de cerveza, conoce muy bien como mejorar la experiencia del consumidor fuera de la casa, pero conocen poco y han hecho pocas experiencias sobre como mejorar el tomarse unas birras con amigos en una fiesta casera.
 
@@ -12,7 +12,7 @@ Esto nos daria la posibilidad, como usuarios del servicio, de comprar un vaso de
 
 El delivery se haria por el mismo sistema de distribucion de la compañia.
 
-#URL - DEMO
+# URL - DEMO
 https://experienciaquilmes.herokuapp.com/
 
 
